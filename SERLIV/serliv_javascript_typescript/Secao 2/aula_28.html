@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 28</title>
+    </head>
+    <body>
+
+        <script>
+            /*
+                # Operador Ternário:
+            */
+            let idade = 16;
+            let paisPresentes = false;
+            let comprouBilhete = true;
+
+            //let msgMaiorIdade = "";
+            //if(idade >= 18) {
+            //    msgMaiorIdade = "É maior de 18 anos";
+            //} else {
+            //    msgMaiorIdade = "É menor de idade";
+            //}
+
+            let msgMaiorIdade = (idade >= 18) ? "É maior de idade!" : "É menor de idade!";
+            //console.log(msgMaiorIdade);
+
+            if(!comprouBilhete) {
+                console.log("Não comprou bilhete.");
+            } else if (idade >= 18) {
+                console.log(msgMaiorIdade + " Pode viajar!");
+            } else {
+                console.log(msgMaiorIdade + " Proibido viajar sozinho! Viagem autorizada com responsavel!");
+            }
+
+        </script>
+    </body>
+</html>

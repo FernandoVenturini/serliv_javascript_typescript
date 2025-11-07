@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Alunos</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" />  
+    <style type="text/css">
+        .underlined{
+            border-bottom: 3px solid currentColor;
+        }
+        td{
+            text-align: center;
+        }
+        td[aluno-nota="n1"]{
+            color: red;
+        }
+        td[aluno-nota="n2"]{
+            color: blue;
+        }
+        td[aluno-nota="n3"]{
+            color: green;
+        }
+        td[aluno-nota="n4"]{
+            color: yellow;
+        }
+        table {
+            border: 1px solid red;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 1rem;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            height:200px;
+        }
+        .hero h1{
+            text-align: center;
+            font-size: 3rem;
+            color: black;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="hero center card-panel mssterialize-red darken-4 white-text z-depth-3">
+            <h1 class="materialize-red-text tex-lighten">Curso de JavaScript Completo</h1>
+        </div>
+
+        <h2 class="materialize-red-text text-lighten-2 underlined">Dados de Alunos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th aluno-nota="n1">Nota 1</th>
+                    <th aluno-nota="n2">Nota 2</th>
+                    <th aluno-nota="n3">Nota 3</th>
+                    <th aluno-nota="n4">Nota 4</th>
+                    <th aluno-nota="media">Media</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Daniel</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Maria</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Joao</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Luana</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Beatriz</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>7.5</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
