@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 41</title>
+    </head>
+    <body>
+        <h1>Escopo de Variaveis</h1>
+
+        <script>
+            let n = 'n local na funçaõ externa';
+
+            function fnInt() {
+                n = "n local na função fnInt";
+                console.log(n);
+            }
+            fnInt();
+            console.log(n);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Alunos</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" />  
+    <style type="text/css">
+        .underlined{
+            border-bottom: 3px solid currentColor;
+        }
+        td{
+            text-align: center;
+        }
+        td[aluno-nota="n1"]{
+            color: red;
+        }
+        td[aluno-nota="n2"]{
+            color: blue;
+        }
+        td[aluno-nota="n3"]{
+            color: green;
+        }
+        td[aluno-nota="n4"]{
+            color: yellow;
+        }
+        table {
+            border: 1px solid red;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 1rem;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            height:200px;
+			flex-direction: column;
+        }
+        .hero h1{
+            text-align: center;
+            font-size: 3rem;
+            color: black;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Start Hero Section -->
+        <div class="hero center card-panel mssterialize-red darken-4 white-text z-depth-3">
+            <h1 class="materialize-red-text tex-lighten">Curso de JavaScript Completo</h1>
+			<h2>Secao 7 - 104 - Gerar linhas e colunas a partir de uma estrutura de dados.</h2>
+        </div>
+        <!-- End Hero Section -->
+
+        <!-- Start Table Section -->
+        <h2 class="materialize-red-text text-lighten-2 underlined">Dados de Alunos</h2>
+
+        <table> <!-- Tabela -->
+            <thead><!-- Tabela cabeçalho -->
+                <tr> <!-- Tabela linha -->
+                    <th>Nome</th> <!-- Tabela cabeçalho célula -->
+                    <th aluno-nota="n1">Nota 1</th>
+                    <th aluno-nota="n2">Nota 2</th>
+                    <th aluno-nota="n3">Nota 3</th>
+                    <th aluno-nota="n4">Nota 4</th>
+                    <th aluno-nota="media">Media</th>
+                </tr> <!-- End Tabela linha -->
+            </thead> <!-- End Tabela cabecalho -->
+
+            <tbody> <!-- Tabela corpo -->
+                
+            </tbody> <!-- End Tabela corpo -->
+        </table> <!-- End Tabela -->
+        <!-- End Table Section -->
+
+        <!-- Linking external JavaScript file -->
+        <script src="script2.js"></script>
+    </body>
+</html>
