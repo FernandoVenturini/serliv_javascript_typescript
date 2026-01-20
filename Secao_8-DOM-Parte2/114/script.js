@@ -70,4 +70,4 @@ const h2 = document.querySelector("h2");
 
 // Insere a sublista clonada DEPOIS do elemento h2
 // nextElementSibling pega o próximo elemento irmão
-container.insertBefore(sublevel, h2.nextElementSibling);
+container.insertBefore(sublevel, h2.nextElementSibling);      
